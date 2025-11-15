@@ -186,3 +186,58 @@ body.light-mode #theme-toggle {
   background-color: #111;
   color: white;
 }
+
+/* Imágenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #about-me {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  #about-me img {
+    width: 60%;
+    max-width: 250px;
+  }
+
+  #about-me p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .project {
+    width: 90%;
+  }
+
+  .project h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info img {
+    width: 4rem;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+}
