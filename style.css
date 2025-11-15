@@ -115,3 +115,74 @@ img {
   margin: 0;
   font-size: 1rem;
  }
+
+ /* =========================================================
+   TRANSICIÓN SUAVE ENTRE TEMAS
+   ========================================================= */
+body, header, section, footer, .project, #my-projects h2 {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* =========================================================
+   TEMA CLARO
+   ========================================================= */
+body.light-mode {
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+/* Header */
+body.light-mode header {
+  background-color: white;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+/* About me */
+body.light-mode #about-me {
+  background-color: white;
+  color: black;
+}
+
+/* Projects section title */
+body.light-mode #my-projects h2 {
+  background-color: #121212;
+  color: white;
+}
+
+/* Individual project cards */
+body.light-mode .project {
+  background-color: #121212;
+  color: white;
+}
+
+/* Footer */
+body.light-mode footer {
+  background-color: #121212;
+  color: white;
+}
+
+/* Contact icons (remains good on both themes) */
+body.light-mode .contact-info p {
+  color: white;
+}
+
+/* Optional: reduce strong shadows for light mode*/
+ body.light-mode img { 
+  filter: brightness(0.95); 
+} 
+
+#theme-toggle {
+  background-color: #3B82F6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+body.light-mode #theme-toggle {
+  background-color: #111;
+  color: white;
+}
