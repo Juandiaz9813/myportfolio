@@ -48,6 +48,10 @@ img {
   width: 14rem;
 }
 
+#my-projects {
+  padding-bottom: 2rem;
+}
+
  #my-projects h2 {
   padding-top: 20px;
   text-align: center;
@@ -77,4 +81,37 @@ img {
   text-align: center;
   background-color: white;
   color: black;
+ }
+
+ footer{
+  text-align: center;
+  margin-top: 3rem;
+  background-color: white;
+  color: black;
+ }
+
+ #contact-me {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+ }
+
+ .contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .contact-info img {
+  width: 5rem;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+ }
+
+ .contact-info p {
+  margin: 0;
+  font-size: 1rem;
  }
